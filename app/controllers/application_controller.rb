@@ -8,5 +8,9 @@ class App < Sinatra::Base
     
     end
 
+    get '/super_hero/new' do
+      erb :super_hero
+    end
+
 
 end
