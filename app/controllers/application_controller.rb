@@ -15,6 +15,7 @@ class App < Sinatra::Base
         member=Member.new [member_data]
         member.team=team
       end
+    end
 
       erb :team
     end
