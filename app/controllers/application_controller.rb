@@ -14,6 +14,7 @@ class App < Sinatra::Base
       params [:team][:members].each do [member_data]
         member=Member.new [member_data]
         member.team=team
+      end
 
       erb :team
     end
