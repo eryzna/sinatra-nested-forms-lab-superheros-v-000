@@ -13,8 +13,6 @@ class App < Sinatra::Base
       @team_name =params[:team][:name]
       @team_motto = params[:team][:motto]
       params [:team][:members].each do [member_data]
-        @member=Member.new [member_data]
-        member.team=team
       end
     end
   end
