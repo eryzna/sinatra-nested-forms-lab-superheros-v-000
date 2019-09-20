@@ -9,11 +9,10 @@ class App < Sinatra::Base
 
     end
 
-    get '/super_hero/new' do
-      erb :super_hero
-    end
 
-    post '/teams'
+    post '/teams' do
+      
+    end
 
 
 end
